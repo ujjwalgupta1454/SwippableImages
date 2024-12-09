@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swippable Images</title>
+    <!-- SwiperJS Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Swiper Section -->
+        <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Image1.png" alt="Image 1">
+                        <div class="text-container">
+                            <div class="draggable-text" contenteditable="true">We invite you and your family's gracious presence and blessing</div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="Image2.png" alt="Image 2">
+                        <div class="text-container">
+                            <div class="draggable-text" contenteditable="true">Click here to edit text...</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Image3.png" alt="Image 3">
+                        <div class="text-container">
+                            <div class="draggable-text" contenteditable="true">Sujata Pradhan weds Atul Kashyap</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="text-options">
+            <button id="add-text">Add Text</button>
+            
+            <div class="options-box">
+                <div class="language-row">
+                    <label for="language">Language</label>
+                    <select id="language">
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="mandarin">Mandarin</option>
+                    </select>
+                </div>
+
+                <textarea id="blessing-message" placeholder="Write your blessing..."></textarea>
+            </div>
+            <!-- Font Style and Weight Box -->
+            <div class="options-box">
+                <div class="dropdown-row">
+                    <select id="font-style">
+                        <option value="charm">Charm</option>
+                        <option value="arial">Arial</option>
+                        <option value="times-new-roman">Times New Roman</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="cursive">Cursive</option>
+                    </select>
+                    <select id="font-weight">
+                        <option value="regular">Regular</option>
+                        <option value="bold">Bold</option>
+                        <option value="lighter">Lighter</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Font Size, Color, Alignment, Line Height Box -->
+            <div class="options-box">
+                <div class="dropdown-row">
+                    <select id="font-size">
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="24">24</option>
+                        <option value="30">30</option>
+                    </select>
+                    <input type="color" id="font-color" value="#000000">
+                    <select id="alignment-dropdown">
+                        <option value="left">Left</option>
+                        <option value="center">Center</option>
+                        <option value="right">Right</option>
+                        <option value="justify">Justified</option>
+                    </select>
+                    <select id="line-height">
+                        <option value="1.2">1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="1.8">1.8</option>
+                        <option value="2.0">2.0</option>
+                    </select>
+                </div>
+                <div class="labels">
+                    <label for="font-size">Font Size</label>
+                    <label for="font-color">Color</label>
+                    <label for="alignment">Alignment</label>
+                    <label for="line-height">Line Height</label>
+                </div>
+            </div>
+            <!-- Start and End Animation Box -->
+            <div class="options-box">
+                <div class="dropdown-row">
+                    <select id="start-animation">
+                        <option value="" disabled selected>Choose Start Animation</option>
+                        <option value="fadeIn">Fade In</option>
+                        <option value="slideInLeft">Slide In Left</option>
+                        <option value="slideInRight">Slide In Right</option>
+                        <option value="zoomIn">Zoom In</option>
+                    </select>
+                    <select id="end-animation">
+                        <option value="" disabled selected>Choose End Animation</option>
+                        <option value="fadeOut">Fade Out</option>
+                        <option value="slideOutLeft">Slide Out Left</option>
+                        <option value="slideOutRight">Slide Out Right</option>
+                        <option value="zoomOut">Zoom Out</option>
+                    </select>
+                </div>
+            </div>
+    <!-- SwiperJS Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
